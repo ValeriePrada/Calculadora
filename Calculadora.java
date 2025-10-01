@@ -15,4 +15,15 @@ public class Calculadora {
         }
         return (double) a / b;
     }
+
+    public double raizCuadrada(double a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("No se puede calcular la raíz cuadrada de un número negativo");
+        }
+        return Math.sqrt(a);
+    }
  
+    public double potencia(double base, double exponente) {
+        return Math.pow(base, exponente);
+    }
+} 
